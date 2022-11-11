@@ -1,6 +1,6 @@
 FROM k8ssandra/cass-management-api:4.0.3-v0.1.37
 USER root
-RUN apt-get update && apt-get install sudo curl zip -y
+RUN apt-get update && apt-get install sudo curl zip vim -y
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 
 RUN unzip awscliv2.zip 
 RUN sudo ./aws/install
